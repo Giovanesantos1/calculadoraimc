@@ -1,19 +1,31 @@
 # Calculadora IMC
-Desc
+Este projeto pega os dados do usuario (peso e altura) e calcula o IMC, mostra o resultado e a classificação na tela seguinte. 
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
 Screenshots
+<img src="https://github.com/user-attachments/assets/6a10bfc4-6247-4a2f-9066-0eaee48c96dd" width = 260/>
+<img src="https://github.com/user-attachments/assets/c0326aa3-0591-444c-b569-647e959d69df" width = 260/>
+
 
 ## Tecnologias
-Techs
-
+- Activity
+- Intent
+- Snackbar
+- ViewGroup
+  - LinearLayout
+  - ConstrantLayout
+- Views
+  - ImageViews
+  - TextViews
+  - EditText
+  - Button
 
 ## License
 ```
 The MIT License (MIT)
 
-Copyright (c) 2023 Roque Buarque Junior
+Copyright (c) 2024 Giovane Santos da Silva
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
