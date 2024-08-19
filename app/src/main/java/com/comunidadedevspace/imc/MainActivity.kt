@@ -1,6 +1,7 @@
 package com.comunidadedevspace.imc
 
 import android.content.Intent
+import com.comunidadedevspace.imc.R
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -11,10 +12,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        // recuperar os componentes EditText
-        //criar uma variavel e associar(=) o componente de UI<EditText>
-        //recuperar o botão da tela
 
         val edtPeso = findViewById<TextInputEditText>(R.id.edt_peso)
         val edtAltura = findViewById<TextInputEditText>(R.id.edt_altura)
@@ -43,9 +40,9 @@ class MainActivity : AppCompatActivity() {
             val alturaQ2 = altura * altura
             val resultado = peso / alturaQ2
 
-            val Intent = Intent(this, ResultActivity::class.java)
+            val intent = Intent(this, ResultActivity::class.java)
             intent.putExtra(KEY_RESULT_IMC, resultado)
-            startActivity(Intent)
+            startActivity(intent)
             println(resultado)
             }
         }

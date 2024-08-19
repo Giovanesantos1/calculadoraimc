@@ -19,17 +19,13 @@ class ResultActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
 
-
-
-
         }
           val result = intent.getFloatExtra(KEY_RESULT_IMC, 0F)
-
           val tvResult = findViewById<TextView>(R.id.tv_result)
-          val tvClassificação = findViewById<TextView>(R.id.tv_classificação)
+          val tvClassificacao = findViewById<TextView>(R.id.tv_classificação)
           tvResult.text = result.toString()
 
-          var classificacao: String? =  if (result <= 18.5f){
+          val classificacao: String =  if (result <= 18.5f){
              "MAGRESA"
           }  else if (result > 18.5f && result <= 24.9f){
               "NORMAL"
@@ -41,7 +37,7 @@ class ResultActivity : AppCompatActivity() {
               "OBESIDADE GRAVE"
           }
 
-           tvClassificação.text = classificacao
+           tvClassificacao.text = classificacao
 
     }
 }
